@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Pydantic cache
+*.mypy_cache/
+.pytest_cache/
+.cache/
+
+# Logs
+*.log
+
+# Database
+*.sqlite3
+
+# Environment variables
+.env
+.env.*
+
+# Compiled binary files
+*.so
+
+# FastAPI static/uploads
+staticfiles/
+media/
+uploads/
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+
+# Uvicorn log file (if redirected)
+uvicorn.log
+
+# Docker
+**/__pycache__/
+*.pid
+docker-compose.override.yml
