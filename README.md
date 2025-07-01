@@ -24,10 +24,20 @@ cd BuguardBackendTask
 
 # Create virtual environment
 python -m venv venv
-source .\venv\Scripts\activate  # on Windows 
+.\venv\Scripts\activate  # on Windows 
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Set database url
+You can either:
+
+### ➤ Create a `.env` file in the project root and include:
+DATABASE_URL=sqlite+aiosqlite:///./sqlite.db
+
+### ➤ Or set it manually:
+Windows (Command Prompt):
+set DATABASE_URL=sqlite+aiosqlite:///./sqlite.db
 
 
 # Start the API
